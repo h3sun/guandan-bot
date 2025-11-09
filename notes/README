@@ -1,0 +1,10 @@
+## Progress Log
+### Week 1 – Monte Carlo Self-Play Demo ✅
+- Implemented minimal Monte Carlo self-play loop (`rl_core/mc_selfplay_demo.py`)
+- Studied MDP, Monte Carlo, and self-play mechanisms
+- Next: connect to Guandan environment (`guandan_mcc/env`)
+
+### Command to run
+```
+python3 /Users/haihaosun/Desktop/focusing/github/guandan-bot/notes/rl_core/mc_selfplay_demo.py --episodes 5000 --env threecard --eps 0.2 --seed 0
+```
