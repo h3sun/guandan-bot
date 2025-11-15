@@ -4,10 +4,11 @@
 - Studied MDP, Monte Carlo, and self-play mechanisms
 - Next: connect to Guandan environment (`guandan_mcc/env`)
 
-### Guandan Engine (current)
-- Added pure-functional rule engine under `guandan_engine/` with full pattern validation, trump logic, tribute, and level progression helpers.
-- Includes CLI helper (`python -m guandan_engine.ui_cli --trump-level 10 --cards "S2 S3 S4 S6 H10"`) for quick pattern inspection and a demo mode (`--demo --seed 0`) that deals a random hand and lists legal openings.
-- Run unit tests with `python -m pytest tests/test_guandan_engine.py`.
+### Week 2 – Guandan Engine Foundations ✅
+- Added pure-functional rule engine under `guandan_engine/` with card modeling, trump-aware pattern validation/comparison, tribute, and level progression helpers.
+- Built a CLI helper (`python -m guandan_engine.ui_cli --trump-level 10 --cards "S2 H3 C4 S6 H10"`) for quick combo inspection plus a demo mode (`--demo --seed 0`) that shuffles a full hand and enumerates legal openings.
+- Wrote initial pytest suite for the engine (`python -m pytest tests/test_guandan_engine.py`) covering wildcards, bombs, move gen, tribute, and level updates.
+- Updated README usage instructions and established a `tmp/guandan-engine-plan.md` feature plan for future iterations.
 
 ### Command to run
 ```
